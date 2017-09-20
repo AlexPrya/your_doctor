@@ -1,0 +1,43 @@
+.header {
+    &-top {
+        padding-top: 40px;
+        padding-bottom: 17px;
+        font-size: 18px;
+
+        text-align: right;
+        
+        &-info {
+
+            a {
+                color: #494949;
+                text-decoration: none;
+              
+                &:active,
+                &:visited {
+                    color: #494949;
+                    text-decoration: none;
+                }
+            
+                &:hover {
+                    color: #212020;
+                    text-decoration: none;
+                }
+            }
+
+            &__icon {
+
+                .vk {
+                    background-image: url("../images/vk.svg");
+                }
+
+                .phone {
+
+                }
+
+                .youtube {
+
+                }
+            }
+        }
+    }
+}

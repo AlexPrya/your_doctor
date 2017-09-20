@@ -1,0 +1,39 @@
+@font-face{    
+    font-family: 'ClinicaPro';
+    src: url('../fonts/clinicapro-regular.eot');
+    src: url('../fonts/clinicapro-regular.eot?iefix') format('eot'),
+    url('../fonts/clinicapro-regular.woff') format('woff'),
+    url('../fonts/clinicapro-regular.ttf') format('truetype'),
+    url('../fonts/clinicapro-regular.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+
+    font-family: 'ClinicaPro';
+}
+
+.fl {
+
+    &-l {
+        float: left;
+    }
+
+    &-r {
+        float: right;
+    }
+}
+
+.al {
+
+    &-l {
+        text-align: left;
+    }
+
+    &-r {
+        text-align: right;
+    }
+}
