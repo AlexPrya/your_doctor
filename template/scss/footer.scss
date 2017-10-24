@@ -1,0 +1,53 @@
+@import "variables/import";
+
+footer {
+  color: $color_third;
+  background-color: $color_first;
+}
+
+.footer {
+
+  &-nav {
+    padding: 15px 0;
+
+    &__section {
+      font-size: 38px;
+
+      a {
+        color: #a0c8f7;
+      }
+    }
+
+    &-contacts,
+    &-menu {
+      padding: 0;
+
+      &__item {
+        display: block;
+        list-style: none;
+        padding: 0 25px 0 0;
+        margin: 0 0 10px 0;
+        font-size: 17px;
+
+        a {
+          color: $color_third;
+          text-decoration: none;
+
+          &:hover,
+          &:active,
+          &:visited {
+            color: $color_third;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__description {
+    padding: 15px 0;
+    border-top: 1px solid $color_third;
+    font-size: 16px;
+    text-align: center;
+  }
+}
