@@ -1,0 +1,101 @@
+@import "variables/import";
+
+.main {
+
+    &-services {
+
+        &-title {
+            text-align: center;
+            position: relative;
+            margin: 0 0 50px;
+
+            &-bg {
+
+                &-line {
+                    width: 100%;
+                    height: 5px;
+                    background-color: $color_first;
+                    border-top: 1px solid $color_first_lightest;
+                    border-bottom: 1px solid $color_first_lightest;
+
+                    position: absolute;
+                    top: 13px;
+                    z-index: 1;
+                }
+
+                &-delimiter {
+
+                    &-outer,
+                    &-inner {
+                        position: relative;
+                        display: inline-block;
+                        border-left: 5px solid $color_third;
+                        border-right: 5px solid $color_third;
+                        z-index: 2;
+                    }
+
+                    &-outer {
+                        padding: 0 50px;
+                    }
+
+                    &-inner {
+                        padding: 0 5px;
+                    }
+                }
+            }
+
+            &-text {
+                display: inline-block;
+                position: relative;
+                font-size: 28px;
+                text-transform: uppercase;
+                color: $color_text_third;
+                margin: 0;
+                padding: 0 30px;
+                background-color: $color_third;
+                z-index: 10
+            }
+        }
+
+        &-row {
+            margin: 0 0 5px;
+        }
+
+        &-items {
+            margin-bottom: 20px;
+        }
+
+        &-item {
+            text-align: center;
+
+            &-link {
+                display: inline-block;
+                text-align: center;
+                color: $color_text_third;
+                text-decoration: none;
+
+                &:hover,
+                &:active,
+                &:visited {
+                    color: $color_text_third;
+                    text-decoration: none;
+                }
+            }
+
+            &-img {
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &-name {
+                display: block;
+                font-size: 18px;
+
+            }
+        }
+    }
+}
