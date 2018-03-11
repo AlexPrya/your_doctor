@@ -52,18 +52,22 @@ header {
     top: -37px;
     left: -27px; }
   .header-top-info {
-    margin-bottom: 20px; }
+    margin-bottom: 16px; }
     .header-top-info a {
       color: #494949;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-right: 5px; }
       .header-top-info a:active, .header-top-info a:visited {
         color: #494949;
         text-decoration: none; }
       .header-top-info a:hover {
         color: #212020;
         text-decoration: none; }
-    .header-top-info__icon .vk {
-      background-image: url("../images/vk.svg"); }
+      .header-top-info a:last-of-type {
+        margin-right: 0; }
+    .header-top-info__icon > i {
+      font-size: 22px;
+      color: #4b7db6; }
   .header-top-menu {
     display: block;
     background-color: rgba(75, 125, 182, 0.9); }
@@ -142,13 +146,26 @@ footer {
       list-style: none;
       padding: 0 25px 0 0;
       margin: 0 0 10px 0;
-      font-size: 17px; }
+      font-size: 17px;
+      position: relative; }
       .footer-nav-contacts__item a, .footer-nav-menu__item a {
         color: #ffffff;
         text-decoration: none; }
         .footer-nav-contacts__item a:hover, .footer-nav-contacts__item a:active, .footer-nav-contacts__item a:visited, .footer-nav-menu__item a:hover, .footer-nav-menu__item a:active, .footer-nav-menu__item a:visited {
           color: #ffffff;
           text-decoration: none; }
+      .footer-nav-contacts__item.address i, .footer-nav-menu__item.address i {
+        font-size: 30px;
+        position: absolute;
+        top: 6px;
+        left: 3px; }
+      .footer-nav-contacts__item.address a, .footer-nav-menu__item.address a {
+        padding-left: 30px;
+        display: inline-block; }
+      .footer-nav-contacts__item.socials, .footer-nav-menu__item.socials {
+        margin-left: 35px; }
+        .footer-nav-contacts__item.socials a, .footer-nav-menu__item.socials a {
+          font-size: 30px; }
 .footer__description {
   padding: 15px 0;
   border-top: 1px solid #ffffff;
@@ -212,5 +229,66 @@ footer {
   .main-services-item-name {
     display: block;
     font-size: 18px; }
+.main-slider {
+  width: 100%;
+  height: 535px;
+  position: relative;
+  margin-bottom: 40px; }
+  .main-slider-back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 535px;
+    background-image: url("../img/back_photo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .main-slider-container {
+    padding: 60px 0 0; }
+  .main-slider-nav {
+    border: 1px solid #4b7db6 !important; }
+    .main-slider-nav-item > a {
+      color: #5d5c5a;
+      font-size: 22px;
+      padding: 25px 0 !important;
+      border: none !important; }
+      .main-slider-nav-item > a:hover, .main-slider-nav-item > a:active, .main-slider-nav-item > a:visited {
+        background-color: transparent !important; }
+    .main-slider-nav-item.active > a {
+      color: #ffffff !important;
+      background-color: #4b7db6 !important;
+      border-radius: 0 !important; }
+  .main-slider-body {
+    width: 100%;
+    height: 310px;
+    background-color: #d4d6d5;
+    position: relative; }
+  .main-slider-carousel {
+    margin-top: 51px;
+    position: absolute;
+    width: 100%; }
+    .main-slider-carousel .item {
+      margin: 0 25px 0; }
+    .main-slider-carousel .slick-dots {
+      bottom: 5px; }
+      .main-slider-carousel .slick-dots li {
+        width: 5px;
+        height: 10px;
+        margin: 0 3px; }
+.main-advantages-items {
+  margin-bottom: 110px; }
+.main-advantages-item {
+  text-align: center; }
+  .main-advantages-item-img {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .main-advantages-item-descr {
+    display: block;
+    font-size: 19px;
+    color: #4b7db6; }
 
 /*# sourceMappingURL=styles.css.map */

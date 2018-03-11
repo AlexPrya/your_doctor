@@ -28,6 +28,7 @@ footer {
         padding: 0 25px 0 0;
         margin: 0 0 10px 0;
         font-size: 17px;
+        position: relative;
 
         a {
           color: $color_third;
@@ -38,6 +39,31 @@ footer {
           &:visited {
             color: $color_third;
             text-decoration: none;
+          }
+        }
+
+        &.address {
+
+          i {
+            font-size: 30px;
+            position: absolute;
+            top: 6px;
+            left: 3px;
+          }
+
+          a {
+            padding-left: 30px;
+            display: inline-block;
+
+          }
+        }
+
+        &.socials {
+          //text-align: right;
+          margin-left: 35px;
+
+          a {
+            font-size: 30px;
           }
         }
       }
