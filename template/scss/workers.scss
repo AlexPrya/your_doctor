@@ -1,0 +1,93 @@
+@import "variables/import";
+
+.worker {
+
+  &s {
+    margin-bottom: 50px;
+
+    &-list {
+      margin-bottom: 25px;
+      
+      div:nth-of-type(2n+1) {
+    
+        .workers-item-slider {
+           float: left;
+        }
+      }
+      
+      div:nth-of-type(2n) {
+
+        .workers-item-slider {
+          float: right;
+        }
+      }
+    }
+
+    &-title {  
+      width: 100%;
+      margin: 0 0 25px;
+      text-align: center;
+      font-size: 32px !important;
+      color: $color_first;
+    }
+
+    &-item {
+
+      &-slider {
+        margin-bottom: 30px;
+        min-width: 349px;
+    
+        &-for {
+          display: inline-block;
+          width: 250px;
+          height: 250px;
+          overflow: hidden;
+          margin: 0 15px 15px 0;
+    
+          &-item {
+            width: 250px;
+            height: 250px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &:focus {
+              border: none;
+            }
+          }
+        }
+    
+        &-nav {
+          display: inline-block;
+          width: 80px;
+          max-height: 250px;
+          overflow: hidden;
+          margin: 0 0 15px 0;
+    
+          &-item {
+            width: 80px;
+            height: 80px !important;
+            margin-bottom: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+    
+        &-title {
+    
+          a {
+            font-size: 18px;
+            color: $color_text_first;
+    
+            &:hover,
+            &:active,
+            &:visited {
+              color: $color_text_first;
+            }
+          }
+        }
+      }
+    }
+  }
+}

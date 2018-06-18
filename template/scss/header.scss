@@ -36,6 +36,14 @@ header {
 
         text-align: right;
 
+        @media(max-width:1319px) {
+            font-size: 16px;
+        }
+
+        @media(max-width:1091px) {
+            font-size: 14px;
+        }
+
         &-logo {
             position: absolute;
             z-index: 10;
@@ -44,34 +52,39 @@ header {
         }
         
         &-info {
-            margin-bottom: 16px;
+            margin-right: -30px;
+            margin-left: -30px;
 
-            a {
-                color: #494949;
-                text-decoration: none;
-                margin-right: 5px;
-              
-                &:active,
-                &:visited {
+            &-item {
+                margin-bottom: 16px;
+                
+                a {
                     color: #494949;
                     text-decoration: none;
+                    margin-right: 5px;
+                  
+                    &:active,
+                    &:visited {
+                        color: #494949;
+                        text-decoration: none;
+                    }
+                
+                    &:hover {
+                        color: #212020;
+                        text-decoration: none;
+                    }
+    
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
                 }
-            
-                &:hover {
-                    color: #212020;
-                    text-decoration: none;
-                }
-
-                &:last-of-type {
-                    margin-right: 0;
-                }
-            }
-
-            &__icon {
-
-                &>i {
-                    font-size: 22px;
-                    color: $color_first;
+    
+                &__icon {
+    
+                    &>i {
+                        font-size: 22px;
+                        color: $color_first;
+                    }
                 }
             }
         }
@@ -79,9 +92,19 @@ header {
         &-menu {
             display: block;
             background-color: $color_first_light;
+            margin-right: -15px;
+            margin-left: -15px;
 
             &__first {
                 font-size: 17px;
+                
+                @media(max-width:1319px) {
+                    font-size: 16px;
+                }
+                
+                @media(max-width:1091px) {
+                    font-size: 13px;
+                }
 
 
                 .header-top-menu {
@@ -95,6 +118,18 @@ header {
 
                             .header-top-menu__second {
                                 display: block;
+                            }
+                        }
+
+                        & > a {
+                            border-bottom: none !important;
+                            border-radius: 0 !important;
+
+                            &:hover,
+                            &:active,
+                            &:visited {
+                                border-bottom: none !important;
+                                border-radius: 0 !important;
                             }
                         }
                     }
@@ -121,6 +156,14 @@ header {
                 text-align: left;
                 padding: 0;
                 font-size: 12px;
+
+                @media(max-width:1319px) {
+                    top: 66px;
+                }
+
+                @media(max-width:1091px) {
+                    top: 57px;
+                }
 
                 .header-top-menu {
 

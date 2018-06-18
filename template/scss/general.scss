@@ -1,3 +1,5 @@
+@import "variables/import";
+
 @font-face{    
     font-family: 'ClinicaPro';
     src: url('fonts/clinicapro-regular.eot');
@@ -12,8 +14,25 @@
 html,
 body {
     height: 100%;
+}
 
-    font-family: 'ClinicaPro';
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'ClinicaPro' !important;
+}
+
+h1 {
+    width: 100%;
+    margin: 50px 0 25px;
+    text-align: center;
+    font-size: 32px !important;
+    color: $color_first;
 }
 
 .fl {
@@ -36,4 +55,14 @@ body {
     &-r {
         text-align: right;
     }
+}
+
+.cb {
+    clear: both;
+}
+
+.title-logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
 }

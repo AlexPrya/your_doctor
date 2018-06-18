@@ -1,0 +1,26 @@
+@import "variables/import";
+
+.service {
+
+    
+    table.price {
+        border-spacing: 0;
+        
+        tr {
+            border-bottom: 2px dotted $color_first;
+
+            td {
+                padding: 10px;
+
+                &:first-of-type {
+                    text-align: left;
+                }
+
+                &:last-of-type {
+                    text-align: right;
+                    color: $color_text_second;
+                }
+            }
+        }
+    }
+}
