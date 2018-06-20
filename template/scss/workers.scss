@@ -2,6 +2,78 @@
 
 .worker {
 
+  &-slider {
+    margin-bottom: 30px;
+    
+    &-for {
+      display: inline-block;
+      // width: 250px;
+      // height: auto;
+      overflow: hidden;
+      // margin: 0 15px 15px 0;
+
+      &-item {
+        width: 250px;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:focus {
+          border: none;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &-nav {
+      // display: inline-block;
+      // width: 80px;
+      // max-height: 250px;
+      overflow: hidden;
+      // margin: 0 0 15px 0;
+
+      &-item {
+        display: inline-block;
+        width: 135px;
+        height: 135px !important;
+        margin: 0 25px 25px 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &-info {
+    margin-bottom: 50px;
+
+    &__name {
+      font-size: 24px;
+      color: $color_text_second
+    }
+
+
+    &-field {
+      color: $color_text_fourth;
+      margin-bottom: 10px;
+
+      &__name {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      &__text {
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+  }
+
   &s {
     margin-bottom: 50px;
 

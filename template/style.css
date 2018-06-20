@@ -378,6 +378,46 @@ footer {
         text-align: right;
         color: #4b7db6; }
 
+.worker-slider {
+  margin-bottom: 30px; }
+  .worker-slider-for {
+    display: inline-block;
+    overflow: hidden; }
+    .worker-slider-for-item {
+      width: 250px;
+      height: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .worker-slider-for-item:focus {
+        border: none; }
+      .worker-slider-for-item img {
+        width: 100%; }
+  .worker-slider-nav {
+    overflow: hidden; }
+    .worker-slider-nav-item {
+      display: inline-block;
+      width: 135px;
+      height: 135px !important;
+      margin: 0 25px 25px 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+.worker-info {
+  margin-bottom: 50px; }
+  .worker-info__name {
+    font-size: 24px;
+    color: #4b7db6; }
+  .worker-info-field {
+    color: #777676;
+    margin-bottom: 10px; }
+    .worker-info-field__name {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0; }
+    .worker-info-field__text {
+      font-size: 18px;
+      margin: 0; }
 .workers {
   margin-bottom: 50px; }
   .workers-list {
@@ -427,5 +467,31 @@ footer {
       color: #494949; }
       .workers-item-slider-title a:hover, .workers-item-slider-title a:active, .workers-item-slider-title a:visited {
         color: #494949; }
+
+.reviews__title {
+  font-size: 30px;
+  margin-bottom: 30px; }
+.reviews-list {
+  margin-bottom: 50px; }
+  .reviews-list.load {
+    height: 200px;
+    text-align: center;
+    background-image: url("img/loading.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px; }
+  .reviews-list-item {
+    margin-bottom: 50px; }
+    .reviews-list-item__name {
+      font-size: 24px;
+      margin-bottom: 0; }
+    .reviews-list-item__about {
+      font-size: 24px; }
+      .reviews-list-item__about span {
+        color: #4b7db6; }
+    .reviews-list-item__text, .reviews-list-item__min-text {
+      font-size: 18px; }
+    .reviews-list-item__more {
+      font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
