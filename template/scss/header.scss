@@ -207,20 +207,7 @@ header {
             &__btn {
                 margin-top: -100px;
                 float: right;
-                background-color: #dec548;
-                border: 2px solid $color_third;
-                color: $color_third;
-                border-radius: 0;
                 opacity: 0.8;
-
-                padding: 15px 30px;
-                font-size: 20px;
-
-                &:hover,
-                &:active,
-                &:visited {
-                    color: $color_third;
-                }
             }
         }
     }

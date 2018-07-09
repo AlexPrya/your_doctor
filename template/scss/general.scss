@@ -66,3 +66,38 @@ h1 {
     margin: 0 auto;
     width: 200px;
 }
+
+form {
+    margin: 0 0 30px;
+
+    input[type=text],
+    textarea,
+    select {
+      width: 100%;
+      padding: 25px 15px;
+      margin: 0 0 16px;
+      font-size: 24px;
+      border: 1px solid $color_first;
+      background-color: $color_third;
+      color: $color_first;
+
+      &::placeholder {
+        color: $color_first;
+      }
+
+      &:focus {
+        outline: $color_first auto 1px;
+      }
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    //   padding: 15px;
+
+      &>option {
+          line-height: 2;
+      }
+    }
+  }

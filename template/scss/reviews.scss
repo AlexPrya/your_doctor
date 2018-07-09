@@ -17,6 +17,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 50px;
+
+      .reviews-list-item {
+        display: none;
+      }
     }
 
     &-item {
@@ -42,6 +46,51 @@
 
       &__more {
         font-size: 18px;
+      }
+    }
+  }
+
+  &-tabs {
+    margin: 0 0 30px;
+    border-bottom: none;
+
+    &>li {
+      margin: 0 30px 0 0;
+
+      &>a {
+          display: inline-block;
+          background-color: $color_third !important;
+          color: $color_first !important;
+          border-radius: 0;
+          font-size: 30px;
+          padding: 17px 32px;
+          border: 1px solid $color_first;
+
+        &:hover,
+        &:focus {
+          background-color: $color_third !important;
+          color: $color_first !important;
+          border-radius: 0;
+          border: 1px solid $color_first !important;
+          outline: $color_first auto 1px;
+        }
+      }
+
+      &.active {
+
+        &>a {
+          background-color: #dec548 !important;
+          color: $color_third !important;
+          border-radius: 0;
+          position: relative;
+          border: 1px solid #dec548 !important;
+
+          &:hover,
+          &:focus {
+            border: 1px solid #dec548 !important;
+            outline: none;
+          }
+        }
       }
     }
   }
